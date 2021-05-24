@@ -1,0 +1,321 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+
+}
+
+body{
+	background: linear-gradient( to right, #e94230, #07b7ce);
+}
+
+
+#contenedor{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	min-width: 360px;
+	
+}
+
+.cabecera{
+	
+	width: 100%;
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	/*align-items: space-around;*/
+}
+	
+	.titulo{
+		width: 25%;
+		height:80%;
+		margin-top: 35px;
+		background-image:
+		background: linear-gradient( to right, #e94230, #07b7ce);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+		.imagenTitulo{
+			opacity: 0.9;
+    		height: 100%;
+    		width: 80%;
+		}
+		
+
+
+
+ #contenedorEnlaces{
+	background: linear-gradient( to right, #e94230, #07b7ce);
+	width: 100%;
+	height: 239px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 36px 0px;
+
+
+
+}
+
+.categorias{
+	height: 100px;
+	width: 1000px
+}
+	.enlace{
+		width: 25%;
+		height: 88px;
+		margin: 0px;
+		background: black;
+		opacity: 0.8;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+
+.contenido{
+	background: linear-gradient( to right, #e94230, #07b7ce);
+	width: 100%;
+	/*height: 80%;*/
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+
+	justify-content: center;
+
+
+}
+
+	#topAmiibos{
+		width: 90%;
+		/*height: 45%;*/
+		height: 400px;
+		/*background: linear-gradient( 0deg, #060606, white);*/
+		background: black;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		opacity: 0.9;
+		border: black 5px solid;
+ 		border-top-left-radius: 20px;
+  		border-bottom-right-radius: 20px;
+  		box-shadow: 2px 2px 5px black;
+
+
+	}
+
+		.amiiboTop{
+			width: 40%;
+			height: 90%;
+			background: black;
+		/*	background:linear-gradient( 0deg, #060606, white); */
+			margin: 15px;
+			display: flex;
+   			 justify-content: space-between;
+
+		}
+
+		.estiloTiYFech{
+				display: flex;
+   			 	flex-direction: column;
+    			justify-content: space-around;
+    			align-items: flex-start;
+		}
+
+		.imgAmiiboTop{
+			width: auto;
+    		height: auto;
+		}
+
+		.tituloAmiiboTop{
+			font-size: 30px;
+   			color: #e94230;
+		}
+
+		li{
+			color:#07b7ce;
+			font-size: 15px;
+		}
+
+		.fechasAmiibo{
+
+		}
+
+
+	#downAmbiibos{
+		width: 90%;
+		/*height: 45%;*/
+		background: black;
+		opacity: 0.9;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+   		flex-direction: row;
+   		margin:30px;
+   		border: black 5px solid;
+ 		border-top-left-radius: 20px;
+  		border-bottom-right-radius: 20px;
+  		box-shadow: 2px 2px 5px black;
+  		min-height: 300px;
+
+	}
+
+
+		.amiiboAbajo{
+
+			width: 20%;
+			height: 337px;
+			background: black;
+   			display: flex;
+   			flex-direction: column;
+ 		 	align-content: center;
+ 			justify-content: space-around;
+ 			margin: 10px;
+  			align-items: center;
+  			border: #e94230 5px solid;
+ 			border-top-left-radius: 20px;
+  			border-bottom-right-radius: 20px;
+  			box-shadow: 2px 2px 5px #e94230;
+  			margin-top: 45px;
+  			margin-bottom: 20px;
+
+		}
+
+
+				.imgAmiiboDown{
+					width: 121px;
+    				margin: 5px;
+				}
+
+				.amiiboAbajo{
+					font-size: 20px;
+					color:#e94230;
+				}
+
+				h1{
+					font-size: 15px;
+					color:#e94230;
+					padding: 15px;
+					 
+				}
+				.tipoAmiiboDown{
+					font-size: 20px;
+					color:#07b7ce;
+				}
+
+@media (max-width: 1160px) {
+	#topAmiibos {
+   			 width: 64%;
+   			 height: 891px;
+   			 flex-direction: column;
+  	}
+
+
+ 	 #downAmbiibos {
+   		 width: 64%;
+	}
+
+
+	.amiiboAbajo {
+  	  width: 40%;
+	}
+
+
+	.amiiboTop {
+   	 width: 60%;
+	}
+
+	#contenedorEnlaces {
+  	  height: 450px;
+	flex-direction: column;
+	}
+
+
+	.enlace {
+    width: 64%;
+    height: 88px;
+
+ 	}
+}
+
+
+ @media (max-width: 1158px) {
+	#topAmiibos {
+   		  height: 1844px;
+ 	}
+
+
+	.amiiboTop {
+		display: flex;
+       flex-direction: column;
+	}
+
+	.titulo{
+ 	 	width: 50%;
+ 	 }
+
+}
+
+
+
+
+ @media (max-width: 669px) {
+		#topAmiibos {
+   			height: 1543px;
+ 	 }
+
+ 	 .titulo{
+ 	 	width: 50%;
+ 	 }
+
+	.amiiboAbajo {
+    	 width: 100%;
+	}
+
+
+	.amiiboTop {
+		display: flex;
+       flex-direction: column;
+	}
+
+}
+
+
+
+
+ @media (max-width: 486px) {
+		#topAmiibos {
+   			height: 1157px;
+ 	 }
+
+ 	 .tituloAmiiboTop{
+ 	 	font-size: 15px;
+ 	 }
+
+ 	 li{
+ 	 	font-size: 12px;
+ 	 }
+
+ 	 span{
+ 	 	font-size: 11px;
+ 	 }
+
+ 	 .titulo {
+    width: 70%;
+	}
+
+
+
+}
+
+
+
